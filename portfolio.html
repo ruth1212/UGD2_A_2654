@@ -1,46 +1,113 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio | Ruth Malaina</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<nav>
-  <h2 class="logo">Ruth<span>.</span></h2>
-  <ul>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="about.html">About</a></li>
-    <li><a href="skills.html">Skills</a></li>
-    <li><a href="portfolio.html">Portfolio</a></li>
-    <li><a href="contact.html">Contact</a></li>
-  </ul>
-</nav>
+  <nav>
+    <div class="logo">Ruth<span>.</span></div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="skills.html">Skills</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a href="contact.html" class="btn-nav">Contact</a></li>
+    </ul>
+  </nav>
 
-<section>
-  <h2>My Projects</h2>
-
-  <div class="grid">
-    <div class="card">
-      <h3>Website Apotek</h3>
-      <p>Sistem manajemen pembelian, supplier, dan stok obat berbasis web.</p>
+  <section class="portfolio">
+    <div class="portfolio-header">
+      <h2>Academic & Personal Projects</h2>
+      <p class="portfolio-desc">
+        Menampilkan integrasi antara teknologi informasi dan kebutuhan bisnis melalui analisis sistem, 
+        perancangan database, dan solusi UI/UX.
+      </p>
     </div>
 
-    <div class="card">
-      <h3>Database Perpustakaan</h3>
-      <p>Perancangan database lengkap dengan ERD dan implementasi MySQL.</p>
-    </div>
+    <div class="portfolio-grid">
 
-    <div class="card">
-      <h3>UI/UX Mobile App</h3>
-      <p>Desain aplikasi keuangan mahasiswa dengan pendekatan user-centered.</p>
-    </div>
-  </div>
-</section>
+      <div class="project-card">
+        <div class="project-img-wrapper">
+          <img src="project1.jpg" alt="Sistem Kasir">
+          <div class="project-category">Web Development</div>
+        </div>
+        <div class="project-content">
+          <h3>Pembuatan Sistem Kasir berdasarkan studi kasus klien</h3>
+          <p>
+            Membangun sistem kasir terintegrasi untuk Cafe UMKM guna mendigitalisasi pencatatan transaksi manual. 
+            Sistem ini mencakup manajemen stok barang secara real-time, perhitungan total belanja otomatis, 
+            dan pembuatan laporan penjualan harian untuk membantu pemilik bisnis memantau performa cafe.
+          </p>
+          <div class="tech">
+            <span>PHP/HTML</span>
+            <span>CSS</span>
+            <span>MySQL</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="btn-small">Live Demo</a>
+            <a href="#" class="btn-outline">GitHub</a>
+          </div>
+        </div>
+      </div>
 
-<footer>
-  © 2026 Ruth Malaina
-</footer>
+      <div class="project-card">
+        <div class="project-img-wrapper">
+          <img src="project2.png" alt="Aplikasi Mobile">
+          <div class="project-category">Database Design</div>
+        </div>
+        <div class="project-content">
+          <h3>Pembuatan Aplikasi Perpustakaan</h3>
+          <p>
+            Merancang antarmuka aplikasi mobile yang bertujuan meningkatkan minat baca masyarakat melalui fitur gamifikasi dan social reading. 
+            Proses desain meliputi user research untuk memahami pain points pembaca, pembuatan wireframe, 
+            hingga prototype interaktif dengan fokus pada pengalaman pengguna yang intuitif dan visual yang menarik.
+          </p>
+          <div class="tech">
+            <span>MySQL</span>
+            <span>ERD</span>
+            <span>Data Analysis</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="btn-small">Detail ERD</a>
+            <a href="#" class="btn-outline">SQL Script</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-img-wrapper">
+          <img src="project3.png" alt="Point of Sales">
+          <div class="project-category">UI/UX Design</div>
+        </div>
+        <div class="project-content">
+          <h3>Pengembangan Sistem Point of Sales</h3>
+          <p>
+            Mengembangkan sistem Point of Sales yang dikustomisasi berdasarkan permintaan spesifik klien untuk manajemen inventaris multi-cabang. 
+            Melakukan analisis kebutuhan sistem (System Requirement Analysis), perancangan arsitektur database yang kompleks, 
+            dan implementasi fitur khusus seperti manajemen hak akses user (RBAC) dan integrasi laporan pajak.
+          </p>
+          <div class="tech">
+            <span>Figma</span>
+            <span>Wireframing</span>
+            <span>User Research</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="btn-small">Figma Link</a>
+            <a href="#" class="btn-outline">Case Study</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <footer>
+    © 2026 Ruth Malaina | Atma Jaya Yogyakarta
+  </footer>
 
 </body>
 </html>

@@ -17,18 +17,90 @@
   </ul>
 </nav>
 
-<section>
-  <h2>Contact Me</h2>
-  <p>Email: ruthmalasilaban@gmail.com</p>
-  <p>Instagram: @ruth_sln</p>
-  <p>GitHub: github.com/ruth</p>
+<section class="contact">
 
-  <a href="mailto:ruthmalasilaban@gmail.com" class="btn">Send Email</a>
+  <!-- KIRI (SAMA SEPERTI HOME) -->
+  <div class="contact-left">
+    <h4>Get In Touch</h4>
+    <h1>Contact Me</h1>
+    <p>
+      Jika Anda tertarik untuk bekerja sama atau ingin berdiskusi,
+      silakan kirim pesan melalui form di sebelah kanan.
+      Saya akan membalas secepat mungkin.
+    </p>
+
+    <!-- SOCIAL BOX -->
+    <div class="contact-social">
+
+      <div class="social-box">
+        <!-- GANTI GAMBAR -->
+        <img src="email.png">
+        <div>
+          <h3>Email</h3>
+          <p>ruthmalasilaban@gmail.com</p>
+        </div>
+      </div>
+
+      <div class="social-box">
+        <img src="instagram.jpg">
+        <div>
+          <h3>Instagram</h3>
+          <p>@ruth_sln</p>
+        </div>
+      </div>
+
+      <div class="social-box">
+        <img src="github.png">
+        <div>
+          <h3>GitHub</h3>
+          <p>github.com/ruth</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <!-- KANAN (FORM) -->
+  <div class="contact-right">
+
+    <form id="contactForm">
+      <h2>Send Message</h2>
+
+      <input type="text" placeholder="Enter your name*" required>
+      <input type="email" placeholder="Enter your email*" required>
+      <input type="text" placeholder="Phone number">
+      <textarea placeholder="Your message*" required></textarea>
+
+      <button type="submit">SUBMIT</button>
+    </form>
+
+  </div>
+
+</section>
+
+<script>
+document.getElementById("contactForm").addEventListener("submit", function(e){
+  e.preventDefault();
+  alert("Pesan berhasil dikirim! (Simulasi)");
+  this.reset();
+});
+</script>
+
+
 </section>
 
 <footer>
   © 2026 Ruth Malaina
 </footer>
+
+<script>
+document.getElementById("contactForm").addEventListener("submit", function(e){
+  e.preventDefault();
+  alert("Pesan berhasil dikirim! (Simulasi)");
+  this.reset();
+});
+</script>
 
 </body>
 </html>
